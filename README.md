@@ -1,5 +1,7 @@
 # VC_P2 Carlos Tomás Quevedo Olivares
 
+Para el desarrollo de esta práctica he reutilizado el envirorment de la práctica 1. Ha sido necesario instalar la libreria de mediapipe para la última tarea.
+
 # Tarea 1
 Realiza la cuenta de píxeles blancos por filas (en lugar de por columnas). Determina el valor máximo de píxeles blancos para filas, maxfil, mostrando el número de filas y sus respectivas posiciones, con un número de píxeles blancos mayor o igual que 0.95*maxfil.
 
