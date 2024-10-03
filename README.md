@@ -6,8 +6,7 @@ Para el desarrollo de esta práctica he reutilizado el envirorment de la prácti
 Realiza la cuenta de píxeles blancos por filas (en lugar de por columnas). Determina el valor máximo de píxeles blancos para filas, maxfil, mostrando el número de filas y sus respectivas posiciones, con un número de píxeles blancos mayor o igual que 0.95*maxfil.
 
 Para esta tarea tan solo he he tenido que modificar el parametro que determina el eje sobre el cual actua la función que cuenta los pixeles blancos de la ya proporcionada en la práctica para contar los pixeles de las columnas. Es decir, en la función "row_counts = cv2.reduce(canny, 1, cv2.REDUCE_SUM, dtype=cv2.CV_32SC1)" lo que era un 0 antes y actuaba sobre el eje x ahora es un uno y actua sobre el eje y. Calcular el número máximo de pixeles blancos en una fila con la función de la libreria numpy de python para el vector que almacena los pixeles de cada fila, y multiplicarlo por 0,95 para obtener el valor con el que vamos a seleccionar las filas que superen o igualen ese valor que representa el numero de pixeles blancos.
-
-Finalmente los datos solicitados por pantalla.
+Finalmente se imprimen los datos solicitados por pantalla.
 
 # Tarea 2
 Aplica umbralizado a la imagen resultante de Sobel (convertida a 8 bits), y posteriormente realiza el conteo por filas y columnas similar al realizado en el ejemplo con la salida de Canny de píxeles no nulos. Calcula el valor máximo de la cuenta por filas y columnas, y determina las filas y columnas por encima del 0.95*máximo. Remarca con alguna primitiva gráfica dichas filas y columnas sobre la imagen. ¿Cómo se comparan los resultados obtenidos a partir de Sobel y Canny?
