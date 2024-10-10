@@ -8,10 +8,22 @@ Realiza la cuenta de píxeles blancos por filas (en lugar de por columnas). Dete
 Para esta tarea tan solo he he tenido que modificar el parametro que determina el eje sobre el cual actua la función que cuenta los pixeles blancos de la ya proporcionada en la práctica para contar los pixeles de las columnas. Es decir, en la función "row_counts = cv2.reduce(canny, 1, cv2.REDUCE_SUM, dtype=cv2.CV_32SC1)" lo que era un 0 antes y actuaba sobre el eje x ahora es un uno y actua sobre el eje y. Calcular el número máximo de pixeles blancos en una fila con la función de la libreria numpy de python para el vector que almacena los pixeles de cada fila, y multiplicarlo por 0,95 para obtener el valor con el que vamos a seleccionar las filas que superen o igualen ese valor que representa el numero de pixeles blancos.
 Finalmente se imprimen los datos solicitados por pantalla.
 
+![image](https://github.com/user-attachments/assets/39d80b77-c840-4947-918c-0ae1b9dc67f0)
+
+
 # Tarea 2
 Aplica umbralizado a la imagen resultante de Sobel (convertida a 8 bits), y posteriormente realiza el conteo por filas y columnas similar al realizado en el ejemplo con la salida de Canny de píxeles no nulos. Calcula el valor máximo de la cuenta por filas y columnas, y determina las filas y columnas por encima del 0.95*máximo. Remarca con alguna primitiva gráfica dichas filas y columnas sobre la imagen. ¿Cómo se comparan los resultados obtenidos a partir de Sobel y Canny?
 
 Aplicamos umbralizado a la imagen resultante de Sobel reutilizando las funciones ya disponibles en la practica. Para el recuento de pixeles blancos por filas y columnas se reutiliza el codigo de la tarea anterior cambiando el nombre de las variables.
+
+![image](https://github.com/user-attachments/assets/4296f91f-908a-405b-b2c6-babf50a956fc)
+
+![image](https://github.com/user-attachments/assets/0340316c-77e0-49d3-86ac-7338068779ed)
+
+![image](https://github.com/user-attachments/assets/91ecbd1f-15a0-4ea2-9d0e-be3c6d0c523c)
+
+![image](https://github.com/user-attachments/assets/bd19cb5a-80b2-4d1a-b230-59d0aece79f2)
+
 
 # Tarea 3
 Proponer un demostrador que capture las imágenes de la cámara, y les permita exhibir lo aprendido en estas dos prácticas ante quienes no cursen la asignatura :). Es por ello que además de poder mostrar la imagen original de la webcam, incluya al menos dos usos diferentes de aplicar las funciones de OpenCV trabajadas hasta ahora.
@@ -27,3 +39,9 @@ Tras ver los vídeos [My little piece of privacy](https://www.niklasroy.com/proj
 Para esta tarea inspirandome en el video de Virtual air guitar y la detección de manos me parecio ocurrente desarrollar un detector de peinetas que las censure cuando aparecen en camara. Para ello comence a buscar una libreria para la detección de manos y en este video https://www.youtube.com/watch?v=_zjKszdAVG8&t=600s encontre la libreria de mediapipe y una pequeña implementación que utilizaba la deteccion de manos para contar los dedos levantados. Familiarizandome un poco con la libreria y modificando la clase para que me detecte cuando se levanta solo el dedo corazón desarrolle la tarea. 
 
 El codigo utiliza la función encontrarmanos() para detectar si hay manos en el frame, a continuación detecta y devuelve la posición de las manos en el frame junto a un vector que segmenta las partes de la mano en diferentes puntos, con la funcion dedosarriba() haciendo uso del vector mencionado según la posición en el frame de los puntos en los que se ha segmentado la mano se detecta si hay dedos levantados o no, y cuales, finalmente con la función corazón arriba me aseguro de que solo el dedo corazón este levantado gracias al vector que devuelve dedosarriba(). Si se detecta una peineta pinta de negro la posición en la que se ha encontrado.
+
+![image](https://github.com/user-attachments/assets/99d7cfa5-386c-4d24-baab-15ea4cc0a651)
+
+![image](https://github.com/user-attachments/assets/fcab887b-aa9c-4d88-a133-de738a126940)
+
+
