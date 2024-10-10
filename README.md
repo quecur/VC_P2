@@ -18,6 +18,9 @@ Proponer un demostrador que capture las imágenes de la cámara, y les permita e
 
 Seguimos los pasos para umbralizar el frame de la camara y lo mismo para el detector de bordes Sobel usando para ello las funciones que hemos aprendido de OpenCV. Una vez hecho esto se muestran por pantalla todos los resultados al mismo tiempo junto a la imagen original.
 
+![image](https://github.com/user-attachments/assets/8d5de3bc-d378-48eb-86fd-25990f65e7a6)
+
+
 # Tarea 4
 Tras ver los vídeos [My little piece of privacy](https://www.niklasroy.com/project/88/my-little-piece-of-privacy), [Messa di voce](https://youtu.be/GfoqiyB1ndE?feature=shared) y [Virtual air guitar](https://youtu.be/FIAmyoEpV5c?feature=shared) proponer un demostrador reinterpretando la parte de procesamiento de la imagen, tomando como punto de partida alguna de dichas instalaciones.
 
